@@ -28,10 +28,19 @@ Copyright 2018  Bart Noordervliet
 defined('ABSPATH') or die('No script kiddies please!');
 
 class Libtables_Integration {
+  public static function register_session() {
+    if (!session_id()) session_start();
+  }
   public static function handle_shortcode($atts) {
+    require('libtables2.php');
     if (empty($atts['block'])) return "No block in shortcode";
-    return "Rendering block " . $atts['block'];
+    ob_start();
+    lt_print_block($atts['block']);
+    return ob_get_clean();
   }
 }
 
+add_action('init', [ 'Libtables_Integration', 'register_session' ]);
 add_shortcode('libtables', [ 'Libtables_Integration', 'handle_shortcode' ]);
+wp_enqueue_style('libtables-css', '/wp-content/plugins/libtables-integration/style.css');
+wp_enqueue_script('libtables-js', '/wp-content/plugins/libtables-integration/clientside.js', [ 'jquery' ]);
