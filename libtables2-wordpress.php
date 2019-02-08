@@ -27,7 +27,7 @@ Copyright 2019  Bart Noordervliet
 
 defined('ABSPATH') or die('No script kiddies please!');
 
-class Libtables_Integration {
+class Libtables2_WordPress {
   public static function register_session() {
     if (!session_id()) session_start();
   }
