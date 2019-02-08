@@ -40,7 +40,7 @@ class Libtables_Integration {
   }
 }
 
-add_action('init', [ 'Libtables_Integration', 'register_session' ]);
-add_shortcode('libtables', [ 'Libtables_Integration', 'handle_shortcode' ]);
-wp_enqueue_style('libtables-css', '/wp-content/plugins/libtables-integration/style.css');
-wp_enqueue_script('libtables-js', '/wp-content/plugins/libtables-integration/clientside.js', [ 'jquery' ]);
+add_action('init', [ 'Libtables2_WordPress', 'register_session' ]);
+add_shortcode('libtables', [ 'Libtables2_WordPress', 'handle_shortcode' ]);
+wp_enqueue_style('libtables-css', '/wp-content/plugins/libtables2-wordpress/style.css');
+wp_enqueue_script('libtables-js', '/wp-content/plugins/libtables2-wordpress/clientside.js', [ 'jquery' ]);
