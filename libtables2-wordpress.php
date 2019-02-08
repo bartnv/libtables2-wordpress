@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Libtables Integration
+Plugin Name: Libtables WordPress Integration
 Plugin URI: https://github.com/bartnv/libtables2-wordpress
 Description: WordPress plugin for Libtables integration
 Version: 1.0
@@ -9,7 +9,7 @@ License: AGPL3
 License URI: https://www.gnu.org/licenses/agpl-3.0.html
 */
 /*
-Copyright 2018  Bart Noordervliet
+Copyright 2019  Bart Noordervliet
 
     Libtables Integration is free software: you can redistribute it and/or
     modify it under the terms of the GNU General Public License version 3.0 as

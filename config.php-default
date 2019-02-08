@@ -1,0 +1,13 @@
+<?php
+
+global $dbh;
+global $lt_settings;
+
+$dbh = new PDO();
+
+$lt_settings = [
+  'blocks_dir' => '/full/path/to/wp-content/libtables-blocks/',
+  'security' => 'database',
+  'error_transl' => [
+  ]
+];

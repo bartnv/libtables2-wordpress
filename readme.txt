@@ -1,4 +1,4 @@
-=== libtables-integration ===
+=== libtables2-wordpress ===
 Contributors: bartnv
 Tags: libtables
 Requires at least: 4.0.0
