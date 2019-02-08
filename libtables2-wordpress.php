@@ -32,7 +32,7 @@ class Libtables2_WordPress {
     if (!session_id()) session_start();
   }
   public static function handle_shortcode($atts) {
-    require('libtables2.php');
+    require_once('libtables2.php');
     if (empty($atts['block'])) return "No block in shortcode";
     ob_start();
     lt_print_block($atts['block']);

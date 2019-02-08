@@ -34,6 +34,7 @@
 
 var ajaxUrl = "/wp-content/plugins/libtables2-wordpress/data.php";
 var tables = {};
+var $ = jQuery;
 
 function tr(str) {
   switch (navigator.language) {
