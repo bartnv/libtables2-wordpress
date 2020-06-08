@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Libtables WordPress Integration
+Plugin Name: Libtables2 WordPress Integration
 Plugin URI: https://github.com/bartnv/libtables2-wordpress
 Description: WordPress plugin for Libtables integration
 Version: 1.0
